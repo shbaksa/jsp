@@ -31,24 +31,31 @@
  <script>
   $(function()
   {
-	  
+	  var w=0;
+	  var i=1;
 	  setInterval(function()
 	  {  
-		  w=0;
+		  
 		  ss=setInterval(function()
 		  {   
 			  w--;
 			  $("#sub").css("margin-left",w);
-			  if(w<=-300)
+			  $("#aa").text(w);
+			  if(w==-300)
 			  {
-				  clearInterval(ss);
+				  $("#bb").text(w);
+				  
 				  $("li").eq(0).insertAfter($("li").eq(7));
 				  $("#sub").css("margin-left","0px");
-				  console.log(w);
+				  w=0;
+				  i=i+1;
+
+
+				  $("#cc").text(i);
+				  clearInterval(ss);
 			  }	  
-			 
-		  },5);
-		  console.log(w);
+		  },10);
+	
 	  },4000);
 	  
   });
@@ -60,6 +67,7 @@
         <li><img src="1.jpg" width="300" height="100"></li><li><img src="2.jpg" width="300" height="100"></li><li><img src="3.jpg" width="300" height="100"></li><li><img src="4.jpg" width="300" height="100"></li><li><img src="5.jpg" width="300" height="100"></li><li><img src="6.jpg" width="300" height="100"></li><li><img src="7.jpg" width="300" height="100"></li><li><img src="8.jpg" width="300" height="100"></li>
       </ul>
     </div>
+    <div id="aa"></div><div id="bb"></div><div id="cc"></div>
 </body>
 </html>
 
