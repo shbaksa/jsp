@@ -12,6 +12,8 @@
 
 </style>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script>
 	$(function(){
 		
@@ -22,9 +24,9 @@
 </head>
 <body>	<!-- .jsp -->
 
-	<!-- <input type="button" id="btn" value="작                   동">
+	<input type="button" id="btn1" value="작동">
 	
-	<hr> -->
+	<hr> 
 	
 	<div id="aa"></div>
 	
