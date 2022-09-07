@@ -11,7 +11,16 @@
   <script>
     $(function()
     {
-    	 $("#main").accordion();
+    	 $("#main").accordion(
+    	 {
+    		 active:true, // 로딩할때 아무것도 열지 않는다
+    		 animate:1000, // 해당시간동안 애니메이션
+    		 collapsible:true, // 제목영역을 toggle모드
+    		 activate:function() // 애니메이션이 끝난 후 실행할 내용을 등록
+    		 {
+    			 alert("끝!!");
+    		 }
+    	 });
     });
   </script>
   <style>
